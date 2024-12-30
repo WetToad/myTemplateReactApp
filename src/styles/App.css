@@ -1,19 +1,31 @@
-#root {
-  max-width: 1280px;
+.ButtonCounter {
+  max-width: 10%;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+}
+
+#AppDiv {
+  width: 100%;
 }
 
 .logo {
-  height: 6em;
+  height: 9em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +34,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -34,7 +47,10 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 1em;
+  color: white;
+  background-color: #242424;
+  border-width: 0;
 }
 
 .read-the-docs {

@@ -1,0 +1,3 @@
+// Import all of Bootstrap's CSS
+$enable-important-utilities: false; //this disables !important
+@import "bootstrap/scss/bootstrap";

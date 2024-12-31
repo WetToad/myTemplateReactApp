@@ -1,0 +1,21 @@
+services:
+  react-app:
+    image: myreactcontainer
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    stdin_open: true
+    ports:
+      - "5173:5173"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - "./src:/usr/src/app/src"
+      - "node_modules"
+    develop:
+      watch:
+        - action: sync
+          path: ./src
+          target: /usr/src/app
+        - action: rebuild
+          path: ./
